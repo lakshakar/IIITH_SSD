@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SSD Lab Activity - 5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="external_SR.js"></script>
+    </head>
+    <body style="background-color:powderblue;">
+        <br/><br/>
+        <h2>Students Records</h2>
+        <br/>
+        
+        <table id="t2">
+            <tr>
+                <td>
+                    <input type="text" id="rollNo" name="roll_no" value="" placeholder="Roll No"/>
+                </td>
+                <td>
+                    <input type="text" id="name" name="name" value="" placeholder="Name"/>
+                </td>
+                <td>
+                    <button type="button" id="addBtn" onclick="addRow()">Add New</button>
+                </td>   
+            </tr>
+        </table>
+        <br/>
+       
+        <table id="t1">
+            <thead>
+                <tr>
+                    <th style="height:40px">
+                        <b>Roll No.</b>
+                    </th>
+                    <th>
+                        <b>Name</b>
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="abcd">
+            </tbody>
+        </table>
+        
+        <br/><br/>
+        
+        <table id="t3">
+            <tr>
+                <td>
+                    <button id="removeBtn" onclick="removeRow()" type="button">
+                        Delete Last Entry
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="external_index.js"></script>
+        <style>
+                table, th, td {
+                    padding:5px;
+                }
+        </style>
+    </head>
+    <body onload = "getWinSize()">
+        <div id="loginPanel">
+            <h2 style="text-align:center">Welcome to SSD Lab</h2>
+            <div id="loginBox">
+                <form style="margin:auto" action="studentsRecords.html">
+                    <table>
+                        <tr>
+                            <td>
+                                <b>UserName</b><br/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="login" type="text" placeholder = "Username"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Password</b><br/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                               <input class="login" type="password" placeholder = "Password"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">
+                                <br/>
+                                <button id="formBtn" type="submit"><b>Login</b></button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

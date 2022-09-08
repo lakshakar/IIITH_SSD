@@ -1,0 +1,79 @@
+            body{
+                background-color: lightyellow;font-family: Arial;
+            }
+            table, th, td {
+                border:0px solid;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            table#t1, table#t1 th, table#t1 td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                height:40px;
+                text-align: center;
+            }
+            
+            table#t1 tbody tr:nth-child(odd){
+                background-color: white;
+            }
+            
+            table#t1 tbody tr:nth-child(even){
+                background-color: lightyellow;
+            }
+            h2{
+                text-align: center;
+            }
+            input{
+                width:90%;
+                height:30px;
+            }
+            button{
+                color:white;
+                background-color: green;
+                height:35px;
+                width:90%;
+            }
+            table#t2 td{
+                text-align: center;
+                width:30%;
+            }
+            table#t1, table#t2, table#t3{
+                width:50%;
+            }
+            button#removeBtn{
+                color:white;
+                background-color:red;
+                width:100%;
+                height:30px;
+            }
+            table#t1 thead tr{
+                background-color:lightskyblue;
+            }
+            
+            
+            #formBtn{
+                padding: 8px;
+                width:90%;
+                background-color: lightgray;
+                color:black;
+            }
+            
+            #loginBox {
+                    border: 1px solid black;
+                    background-color: white;    
+                    width:20%;
+                    border-radius: 5px;
+                    padding:10px;
+                    margin:auto;
+                    height:250px;
+                    box-shadow:  5px 10px lightgrey;
+                }
+            input.login:hover {
+                    border-color: red;
+            }
+            
+             input.login{
+                    height:28px;
+             }
+                
