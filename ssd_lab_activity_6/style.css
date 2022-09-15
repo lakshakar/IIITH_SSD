@@ -1,0 +1,26 @@
+td#team_mem_select, td#team_mem_add{
+    border:1px solid black;
+    height:5cm;
+    width:4cm;
+}
+
+td.team_mem1{
+    background-color: lightgrey;
+    color:black;
+    border: 2px solid black;
+}
+
+button#submit_btn{
+    color:black;
+    background-color: cyan;
+    width:4cm;
+}
+
+td#password_verification, td#username_verification{
+    color:red;
+    font-size: 10px;
+}
+
+table, th, td {
+                    padding:5px;
+                }

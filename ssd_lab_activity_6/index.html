@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SSD-Lab-Activity-6</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="external_index.js"></script>
+       
+    </head>
+    <body>
+        <h3 style="text-align:center">Team Form</h3>
+        <div style="padding-left:10px;">
+            <form onsubmit="return showdata(event)">
+            <table>
+                <tr>
+                    <td class="col">
+                        <b>Manager Name</b>
+                    </td>
+                    <td colspan="2">
+                        <input required type="text" id = "mgr_name" name="mgr_name"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col">
+                        <b>Group Email</b>
+                    </td>
+                    <td colspan="2">
+                        <input required type="email" id="grp_email" name="grp_email"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col">
+                        <b>Server Username</b>
+                    </td>
+                    <td>
+                        <input required type="text" onblur="checkUname()" id="server_username" name="server_username"/>
+                    </td>
+                    <td id="username_verification">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col">
+                        <b>Server Password</b>
+                    </td>
+                    <td colspan="2">
+                        <input required type="password" id="server_password" name="server_password"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col">
+                        <b>Confirm Password</b>
+                    </td>
+                    <td>
+                        <input required type="password" oninput="checkPassword()" id="confirm_server_password" name="confirm_server_username"/>
+                    </td>
+                    <td id="password_verification">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col">
+                        <b>Team Lead</b>
+                    </td>
+                    <td colspan="2">
+                        <select name="team_lead" id="team_lead">
+                            <option value="Tom">Tom</option>
+                            <option value="Steve">Steve</option>
+                            <option value="Bruce">Bruce</option>
+                            <option value="Stephen">Stephen</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col">
+                        <b>Team Members</b>
+                    </td>
+                    <td id="team_mem_select">
+                        <table style="width:100%;">
+                            <tr><td class="team_mem1" ondragstart="drag(event)" draggable="true" id = "Tom">Tom</td></tr>
+                            <tr><td class="team_mem1" ondragstart="drag(event)" draggable="true" id = "Steve">Steve</td></tr>
+                            <tr><td class="team_mem1" ondragstart="drag(event)" draggable="true" id = "Bruce">Bruce</td></tr>
+                            <tr><td class="team_mem1" ondragstart="drag(event)" draggable="true" id = "Stetdhen">Stephen</td></tr>
+                        </table>
+                    </td>
+                    <td id="team_mem_add">
+                        
+                    </td>
+                </tr>
+            </table>
+            <br/><br/>
+            
+            <button type="submit" id="submit_btn">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
